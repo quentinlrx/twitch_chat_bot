@@ -25,7 +25,6 @@ function onMessageHandler (target, context, msg, self) {
   }
  
   let parameters = msg.split(' ').filter(n => n);
-  
   let command = parameters.shift().slice(1).toLowerCase();
   if (command === 'commandToUse') {
       let msg = `text to display ${parameters[0]}?`;
